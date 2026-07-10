@@ -20,24 +20,27 @@ st.set_page_config(
 # Load Datasets
 # ---------------------------------------
 
+from pathlib import Path
+
+BASE_DIR = Path(__file__).parent
+
 @st.cache_data
 def load_data():
 
-    train = pd.read_csv("train.csv")
+    train = pd.read_csv(BASE_DIR / "train.csv")
 
-    processed = pd.read_csv("processed_superstore.csv")
+    processed = pd.read_csv(BASE_DIR / "processed_superstore.csv")
 
-    monthly = pd.read_csv("monthly_sales_processed.csv")
+    monthly = pd.read_csv(BASE_DIR / "monthly_sales_processed.csv")
 
-    comparison = pd.read_csv("model_comparison.csv")
+    comparison = pd.read_csv(BASE_DIR / "model_comparison.csv")
 
-    anomaly = pd.read_csv("anomaly_report.csv")
+    anomaly = pd.read_csv(BASE_DIR / "anomaly_report.csv")
 
     return train, processed, monthly, comparison, anomaly
 
 
 train, processed, monthly, comparison, anomaly = load_data()
-
 # ---------------------------------------
 # Dashboard Title
 # ---------------------------------------
