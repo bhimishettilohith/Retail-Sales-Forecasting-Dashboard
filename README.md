@@ -285,18 +285,3 @@ streamlit run app.py
 # 👨‍💻 Author
 
 **Bhimishetti Lohith**
-
-B.Tech – Computer Science Engineering (Artificial Intelligence & Machine Learning)
-
-Sir Padampat Singhania University, Udaipur
-
-GitHub:
-https://github.com/bhimishettilohith
-
----
-
-# 🙏 Acknowledgements
-
-This project was developed as part of a Machine Learning and Business Analytics learning journey to demonstrate practical applications of data science techniques in retail sales forecasting.
-
----
